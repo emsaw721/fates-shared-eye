@@ -27,10 +27,10 @@ class Post extends Model {
 Post.init(
     {
         id: {
-            type: DataTypes.INTEGER,
+            type: sequelize.UUID,
+            defaultValue: sequelize.UUIDV4, 
             allowNull: false, 
-            primaryKey: true, 
-            autoIncrement: true
+            primaryKey: true
         },
         title: {
             type: DataTypes.STRING,
