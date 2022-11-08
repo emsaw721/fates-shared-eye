@@ -1,4 +1,4 @@
-const { Model, DataTypes} = require('sequelize');
+const { Model, DataTypes, Sequelize} = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Post extends Model {
@@ -27,8 +27,8 @@ class Post extends Model {
 Post.init(
     {
         id: {
-            type: sequelize.UUID,
-            defaultValue: sequelize.UUIDV4, 
+            type: Sequelize.UUID,
+            defaultValue: Sequelize.UUIDV4, 
             allowNull: false, 
             primaryKey: true
         },
