@@ -1,4 +1,4 @@
-const { json } = require('body-parser');
+
 const Post = require('../../models/Post')
 
 async function commentFormHandler(event) {
