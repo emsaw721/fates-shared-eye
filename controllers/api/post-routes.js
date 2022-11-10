@@ -22,7 +22,7 @@ router.get('/', (req,res) => {
                 attributes: ['username']
             }
         ]
-    }).then(dbPostData =>  res.json(dbPostData)).catch(err => {
+    }).then(allPosts =>  res.json(allPosts)).catch(err => {
         console.log(err);
         res.status(500).json(err); 
     })
@@ -49,12 +49,12 @@ router.get('/:id', (req,res) => {
                 attributes: ['username']
             }
         ]
-    }).then(dbPostData => {
-        if(!dbPostData) {
+    }).then(onePost => {
+        if(!onePost) {
             res.status(404).json({message: 'No post found with this id!'})
             return; 
         }
-        res.json(dbPostData); 
+        res.json(onePost); 
     }).catch(err => {
         console.log(err);
         res.status(500).json(err); 
