@@ -27,10 +27,10 @@ class Post extends Model {
 Post.init(
     {
         id: {
-            type: DataTypes.UUID,
-            defaultValue: DataTypes.UUIDV4, 
+            type: DataTypes.INTEGER,
             allowNull: false, 
-            primaryKey: true
+            primaryKey: true,
+            autoIncrement: true 
         },
         title: {
             type: DataTypes.STRING,
@@ -42,7 +42,7 @@ Post.init(
             validate: {isURL: true}
         },
         user_id: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.UUID,
             references: {
                 model: 'user',
                 key: 'id'
