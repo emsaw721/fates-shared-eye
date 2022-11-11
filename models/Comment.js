@@ -19,7 +19,8 @@ Comment.init(
             }
         },
         user_id: {
-            type: DataTypes.INTEGER,
+            // type: DataTypes.UUID,
+            type: DataTypes.INTEGER, 
             references: {
                 model: 'user',
                 key: 'id'
