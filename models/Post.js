@@ -28,9 +28,9 @@ Post.init(
     {
         id: {
             type: DataTypes.INTEGER,
+            autoIncrement: true, 
             allowNull: false, 
-            primaryKey: true,
-            autoIncrement: true 
+            primaryKey: true
         },
         title: {
             type: DataTypes.STRING,
@@ -42,7 +42,7 @@ Post.init(
             validate: {isURL: true}
         },
         user_id: {
-            type: DataTypes.UUID,
+            type: DataTypes.INTEGER,
             references: {
                 model: 'user',
                 key: 'id'
