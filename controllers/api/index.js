@@ -1,11 +1,15 @@
+
+// this is for the api sub controllers 
 const router = require('express').Router(); 
 
-const apiRoutes = require('../api');
-const dashboardRoutes = require('../dashboard-rooutes');
-const homeRoutes = require('../home-routes'); 
+const postRoutes = require('./post-routes');
+const userRoutes = require('./user-routes');
+const commentRoutes = require('./comment-routes'); 
 
-router.use('/', homeRoutes);
-router.use('/dashboard', dashboardRoutes); 
-router.use('/api', apiRoutes);
+router.use('/users', userRoutes);
+router.use('/posts', postRoutes);
+router.use('/comments', commentRoutes);
+
+
 
 module.exports = router; 
