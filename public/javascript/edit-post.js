@@ -1,11 +1,10 @@
-const Post = require('../../models/Post')
+
 
 
 async function editPostHandler(event) {
     event.preventDefault();
 
     const title = document.querySelector('input[name="post-title"]').value.trim();
-    const id = Post.id; 
 
     const response = await fetch(`/api/posts/${id}`, {
         method: 'PUT',

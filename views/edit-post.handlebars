@@ -4,7 +4,7 @@
     <a href="/dashboard"> &larr; Dashboard</a>
     <h2>Edit Post</h2>
     <form class="edit-post-form">
-        <div>
+        <div id="post-id" data-id="{{post.id}}">
             <input name="post-title" type="text" value="{{post.title}}" />
             <span>({{format_url post.post_url}})</span>
         </div>
@@ -22,12 +22,12 @@
         <textarea name="comment-body"></textarea>
     </div>
     <div>
-        <button type="submit">Add Comment</button>
+        <button id="button" type="submit">Add Comment</button>
     </div>
 </form>
 
 {{> comments post.comments}}
 
-<script src="/public/javascript/edit-post.js"></script>
-<script src="/public/javascript/delete-post.js"></script>
-<script src="/public/javascript/comment.js"></script>
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
+<script src="/javascript/comment.js"></script>

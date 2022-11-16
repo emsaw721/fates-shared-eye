@@ -15,12 +15,15 @@ router.get('/', (req, res) => {
 
 // create a comment 
 router.post('/', withAuth, (req, res) => {
+  console.log(req.body)
     // going to create a comment, need text, user id for user making post, and the posts id
     Comment.create({
         comment_text: req.body.comment_text,
         user_id: req.session.user_id,
-        post_id: req.body.post_id
-    }).then(createdComment => res.json(createdComment)).catch(err => {
+        post_id: req.body.id
+    }).then(createdComment => {
+        console.log(createdComment)
+        res.json(createdComment)}).catch(err => {
         console.log(err)
         res.status(400).json(err);
     })

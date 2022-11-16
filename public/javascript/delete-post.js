@@ -1,10 +1,10 @@
 
-const Post = require('../../models/Post')
+
 
 async function deletePostHandler(event) {
     event.preventDefault();
 
-    const id = Post.id; 
+    const id = document.querySelector('#post-id').getAttribute('data-id');
 
     const response = await fetch(`/api/posts/${id}`, {
         method: 'DELETE'
