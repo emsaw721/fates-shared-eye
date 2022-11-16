@@ -2,9 +2,9 @@
 
 
 async function commentFormHandler(event) {
-//event.preventdefault stops form submit 
+   //event.preventdefault stops form submit 
   
-    const id = document.querySelector('#post-id').getAttribute('data-id'); //or .dataset.id 
+    const id = document.querySelector('#post-id').getAttribute('data-id'); //or .dataset.id instead of .getAttribute
 
     const comment_text = document.querySelector('textarea[name="comment-body"]').value.trim();
     // make data attribute like above to store in html. pass down to handlebars 
