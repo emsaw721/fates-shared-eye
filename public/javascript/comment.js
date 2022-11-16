@@ -1,6 +1,6 @@
 
 
-//request to server --> db
+
 async function commentFormHandler(event) {
 //event.preventdefault stops form submit 
   
