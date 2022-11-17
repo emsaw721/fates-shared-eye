@@ -15,8 +15,7 @@ This application is a tech blog website designed for the user to make posts abou
 In order for this application to work, the user will need to install the <a href="https://expressjs.com/en/starter/installing.html">Express</a>, <a href="https://www.npmjs.com/package/express-handlebars">Express Handlebars</a>, <a href="https://www.npmjs.com/package/express-session">Express session</a>, <a href="https://www.npmjs.com/package/mysql2">MySQL2</a>, <a href="https://www.npmjs.com/package/sequelize">Sequelize</a>, and <a href="https://www.npmjs.com/package/connect-session-sequelize">connect-session-sequelize</a> packages. The user will also need to install <a href="https://www.npmjs.com/package/dotenv">dotenv</a> and <a href="https://www.npmjs.com/package/bcrypt">bcrypt</a> to hide sensitve information like the database password.
 
 ## Usage
-Video Link to Walkthrough: https://drive.google.com/file/d/1u0UUY-3VmgvhI8AeSQgPsNRjX1UVocwN/view
-<br>
+
 First, the user will open the terminal and navigate to the application. <br>
 Then, the user will run mysql2 using either the command: 
 
