@@ -50,11 +50,18 @@ Once the post is created, the user will see it displayed on the dashboard.
 ![Alt text](./images/fates-dashboard-with-post.png)
 The user can then interact with the post by editing the posts title or content, adding a comment, or deleting the post. 
 ![Alt text](./images/fates-add-comment.png)
+![Alt text](./images/fates-comment-at-bottom-post.png)
+![Alt text](./images/fates-created-comment.png) 
+When the user clicks the website's name in the upper left hand corner, the user is taken to the homepage where they will see all of their posts and the number of comments associated with the post. 
+![Alt text](./images/fates-homepage-with-all-posts.png)
+The user can select a single post by clicking "comments". This will display the creator's username, the date the post was created, the post title with a working link to the url, and an option to view the comments. 
+![Alt text](./images/fates-homepage-selected-post.png)
+
 
 
 
 ## Future Iterations 
-Future versions of this application will include front end in order to make it a functioning full stack application. 
+Future versions of this application will include the ability to view the homepage while remaining logged in. 
 
 ## License 
 [MIT](https://choosealicense.com/licenses/mit/) 
